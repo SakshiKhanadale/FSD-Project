@@ -1,2 +1,2 @@
 # FSD-Project
-Project regarding online coding platform
+Online coding platform 
