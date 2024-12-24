@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Education Platform</title>
+    <link rel="stylesheet" href="./Online Education Platform_files/styles.css">
+    <script>
+        // Function to show and hide sections based on the clicked link
+        function toggleSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content, #about, #contact');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show the clicked section
+            const sectionToShow = document.getElementById(sectionId);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block';
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1><b>Welcome to the Expert-Led Platform</b></h1>
+        <h2><b> CODE CREATE INNOVATE</b></h2>
+
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="toggleSection(&#39;Home&#39;)">Home</a>
+        <a href="javascript:void(0)" onclick="toggleSection(&#39;courses&#39;)">Courses</a>
+        <a href="javascript:void(0)" onclick="toggleSection(&#39;about&#39;)">About</a>
+        <a href="javascript:void(0)" onclick="toggleSection(&#39;contact&#39;)">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Learn Anytime, Anywhere</h1>
+        <p>Explore our wide range of courses and boost your skills.</p>
+    
+        <div class="cd">
+            
+            <h2><p>Learn to Code </p>
+            <p> Create your own</p>
+            <p>and Innovate with our expert-led online class</p>
+            </h2>
+        
+        </div>
+
+
+<section id="Home" style="display: none;">
+    <section id="courses" class="content" style="display: block;">
+        <div class="card">
+            <a href="http://127.0.0.1:5500/web-development.html">
+                <img src="./Online Education Platform_files/wd.jpg">
+                <h3>Web Development</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="http://127.0.0.1:5500/data-science.html">
+                <img src="./Online Education Platform_files/ds.jpg">
+                <h3>Data Science</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="http://127.0.0.1:5500/graphic-design.html">
+                <img src="./Online Education Platform_files/gd.jpg">
+                <h3>Graphic Design</h3>
+            </a>
+        </div>
+    </section>
+
+    
+
+<section id="about" style="display: none;">
+    <h>About Us</h>
+
+       <h1><p><b>Our Mission:</b></p></h1>
+        <h2> our mission is to provide accessible, high-quality education to learners worldwide. We are committed to helping students achieve their academic and professional goals by offering a diverse range of online courses, resources, and tools.</h2>
+        
+        <h1><p><b></b>What We Offer:</p></h1>
+    <h2>We offer a wide variety of courses in [subject areas, e.g., technology, business, health, etc.], designed for learners of all levels. Whether you're looking to upskill for your career, earn a certification, or explore new subjects, we have something for you. Our platform provides an engaging learning experience with interactive lessons, expert instructors, and a supportive community.</h2>
+        
+        
+            <h1><p><b>Quality:</b></p></h1> <h2>We strive for excellence in everything we do, from course content to customer service.</h2>
+                
+                    <h1><p><b> Innovation:</b></p></h1> <h2>We embrace the latest technologies to enhance the learning experience.</h2>
+                        <h1><p><b> Support:</b></p></h1> <h2>Our team is here to guide and support you every step of the way.</h2>
+                            <h1><p><b> Why Choose Us:</b></p></h1>
+        
+                        <ol> <h2> <li> instructors with years of experience in their fields.</li> </h2> 
+                            <h2> <li> Flexible learning that fits your schedule.</li></h2>
+                            <h2>  <li>Affordable pricing options for all budgets.</li></h2>
+                                <h2>  <li>A vibrant community of learners and educators.</li></h2>
+        
+    </ol>
+</section>
+<section id="contact" style="display: none;">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+    <h2><p>Name :  <input type="text" name="name" placeholder="Your Name" required=""></p></h2>
+    <h2>  <p>email : <input type="email" name="email" placeholder="Your Email" required=""></p></h2>
+    <h2>  <p><textarea name="message" placeholder="Your Queries,if any" rows="5" required=""></textarea></p></h2>
+       <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</section></div></body></html>

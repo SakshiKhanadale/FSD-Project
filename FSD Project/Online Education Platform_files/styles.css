@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #134479;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #36090e;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+   
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    padding: 15px;
+    background-color: #0056b3;
+    color: white;
+    margin: 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+footer {
+    background-color: #003d80;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg5.jpg'); 
+    backdrop-filter: blur(8px);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+
+h{
+    font-size: xx-large;
+    color: white;
+}
+h1{
+    font-size: x-large;
+    color: rgb(119, 36, 36);
+    font-display:  flex;
+}
+
+h2{
+    font-size: larger;
+    color: whitesmoke;
+}
+
+.cd h4{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    color: aliceblue;
+    text-align: center;
+   
+}
+
+.cd{
+    
+    align-items: end;
+}
+
+h7{
+    font-size: xx-large;
+    color: rgb(245, 213, 213);;
+}
+
+ul{
+    font-size: x-large;
+    color: aliceblue;
+}
+
